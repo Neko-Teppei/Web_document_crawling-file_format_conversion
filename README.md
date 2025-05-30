@@ -31,6 +31,8 @@ Web legal document crawling and file format conversion tools
    cd legal-doc-scraper
    ```
 
+提示：MinerU本地化部署可以参考：https://zhuanlan.zhihu.com/p/1908942870666282723 、 https://www.bilibili.com/video/BV1zCXhYbE2p/?spm_id_from=333.337.search-card.all.click&vd_source=c414af4780348b902d1d9d8bf1ba7692
+
 2. 安装依赖：
    ```bash
    pip install -r requirements.txt
