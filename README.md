@@ -22,6 +22,11 @@ Web legal document crawling and file format conversion tools
 - Chrome浏览器
 - ChromeDriver (与浏览器版本匹配)
 
+- 技术栈
+  - Python + Selenium
+  - Flask + Requests
+  - MinerU API
+
 # 提示：
 ### tips1.   MinerU本地化部署可以参考：https://zhuanlan.zhihu.com/p/1908942870666282723 、 https://www.bilibili.com/video/BV1zCXhYbE2p/?spm_id_from=333.337.search-card.all.click&vd_source=c414af4780348b902d1d9d8bf1ba7692。
 ### tips2.   本地部署后的API化需要下载MinerU官网包,克隆地址：https://github.com/opendatalab/MinerU.git  ,API化可参考上面的知乎博客（按照视频操作会有问题）。
@@ -80,7 +85,7 @@ Web legal document crawling and file format conversion tools
 ![图片](https://github.com/user-attachments/assets/92463f7c-fd30-44f9-a86c-2ec5eeb4e923)
 
 ```
-legal-doc-scraper/
+Web_document_crawling-file_format_conversion/
 ├── downloads/              # 下载文件存储目录
    └── /                    # 文件夹名称为查询的关键词，按关键词搜索之后会自动保存网页里有的文件
       └── markdown_output/  # 文件转化为Md文件之后所储存的位置
