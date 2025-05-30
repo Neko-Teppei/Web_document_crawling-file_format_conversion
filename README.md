@@ -1,8 +1,7 @@
 # Web_document_crawling-file_format_conversion
 Web legal document crawling and file format conversion tools
-# GitHub 项目文档 (`README.md`)
 
-```markdown
+
 # 法律文档爬取与转换工具
 
 一个自动化爬取香港司法机构网站法律文档并将其转换为结构化Markdown的工具。
@@ -23,15 +22,33 @@ Web legal document crawling and file format conversion tools
 - Chrome浏览器
 - ChromeDriver (与浏览器版本匹配)
 
+# 提示：
+### tips1.   MinerU本地化部署可以参考：https://zhuanlan.zhihu.com/p/1908942870666282723 、 https://www.bilibili.com/video/BV1zCXhYbE2p/?spm_id_from=333.337.search-card.all.click&vd_source=c414af4780348b902d1d9d8bf1ba7692。
+### tips2.   本地部署后的API化需要下载MinerU官网包,克隆地址：https://github.com/opendatalab/MinerU.git  ,API化可参考上面的知乎博客（按照视频操作会有问题）。
+### tips3.   本人只用了一个conda环境（MinerU）,且为了保护我的本地tourch环境，只用了CPU进行训练。本机CPU:笔记本版的i7-12400H+32G运行内存。
+### tips4.   如果不需要配置本地API环境，直接在cmd(管理员模式)下运行conda环境后：
+
+   ```bash
+   cd “pdf所在文件夹”
+   magic-pdf -p 要转格式的.pdf -o ./output
+   
+   ```
+
+### tips5.   MinerU框架
+![图片](https://github.com/user-attachments/assets/df0c33b6-8be4-4ded-b334-436f74294fea)
+
+
 ### 安装步骤
 
 1. 克隆仓库：
    ```bash
    git clone https://github.com/yourusername/legal-doc-scraper.git
    cd legal-doc-scraper
+   
    ```
 
-提示：MinerU本地化部署可以参考：https://zhuanlan.zhihu.com/p/1908942870666282723 、 https://www.bilibili.com/video/BV1zCXhYbE2p/?spm_id_from=333.337.search-card.all.click&vd_source=c414af4780348b902d1d9d8bf1ba7692
+
+
 
 2. 安装依赖：
    ```bash
@@ -47,6 +64,8 @@ Web legal document crawling and file format conversion tools
 1. 运行主程序：
    ```bash
    python main.py
+
+
    ```
 
 2. 按照提示选择搜索类型和输入关键词
@@ -61,11 +80,15 @@ Web legal document crawling and file format conversion tools
 ```
 legal-doc-scraper/
 ├── downloads/              # 下载文件存储目录
+   └── /                    # 文件夹名称为查询的关键词
+      └── markdown_output/  # 文件转化为Md文件之后所储存的位置
 ├── scraper.py              # 主爬虫逻辑
 ├── main.py                 # 用户交互入口
 ├── requirements.txt        # Python依赖
 ├── README.md               # 项目文档
+├── MinerU-master           # 从github上克隆下来的MinerU官网包、克隆地址：https://github.com/opendatalab/MinerU.git
 └── examples/               # 示例输出
+
 ```
 
 ## API配置
@@ -83,7 +106,7 @@ A: 请确保ChromeDriver版本与已安装的Chrome浏览器版本一致
 A: 确保已安装Microsoft Word或LibreOffice
 
 **Q: API请求超时**
-A: 增大`scraper.py`中的timeout值(默认900秒)
+A: 增大`scraper.py`中的timeout值(CPU训练默认900秒，GPU训练时间会更短可自行设定)
 
 ## 贡献指南
 
