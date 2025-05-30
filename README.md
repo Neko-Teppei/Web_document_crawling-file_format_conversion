@@ -77,10 +77,12 @@ Web legal document crawling and file format conversion tools
 
 ## 项目结构
 
+![图片](https://github.com/user-attachments/assets/92463f7c-fd30-44f9-a86c-2ec5eeb4e923)
+
 ```
 legal-doc-scraper/
 ├── downloads/              # 下载文件存储目录
-   └── /                    # 文件夹名称为查询的关键词
+   └── /                    # 文件夹名称为查询的关键词，按关键词搜索之后会自动保存网页里有的文件
       └── markdown_output/  # 文件转化为Md文件之后所储存的位置
 ├── scraper.py              # 主爬虫逻辑
 ├── main.py                 # 用户交互入口
@@ -96,6 +98,10 @@ legal-doc-scraper/
 如需使用MinerU API转换PDF，请确保：
 1. MinerU服务运行在`http://localhost:8888`
 2. 或修改`scraper.py`中的`mineru_api_url`变量
+
+## 成功范本
+
+
 
 ## 常见问题
 
