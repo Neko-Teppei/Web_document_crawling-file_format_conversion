@@ -1,0 +1,47 @@
+E:\Python3.9.0\python.exe F:\Interview\202505-CTI\legal_scraper_final_fixed\main.py 
+📘 请选择搜索条件：
+1. this phrase
+2. these words in any order
+3. any of these words
+4. Parties of Judgment
+5. Coram of Judgment
+6. Neutral Citation Number of Judgment
+7. Case Number of Judgment
+8. Representation
+9. Date of Judgment
+10. Offence
+11. Reported Citation
+输入对应数字: 4
+🔎 输入用于 [Parties of Judgment] 的关键词: sound global ltd.
+Exception managing chrome: error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)
+🔍 打开搜索页面...
+
+--- 处理第 1/2 篇 ---
+找到 Word 文件: https://legalref.judiciary.hk/doc/judg/word/vetted/other/en/2019/HCMP000868A_2019.docx
+✅ 保存成功: downloads\sound global ltd.\HCMP000868A_2019.docx
+
+--- 处理第 2/2 篇 ---
+找到 Word 文件: https://legalref.judiciary.hk/doc/judg/word/vetted/other/en/2019/HCMP000868_2019.docx
+✅ 保存成功: downloads\sound global ltd.\HCMP000868_2019.docx
+
+--- 正在处理: HCMP000868A_2019.pdf ---
+✅ 生成 Markdown: downloads\sound global ltd.\markdown_output\HCMP000868A_2019.md
+✅ API 响应状态码: 200
+📄 返回内容预览: HCMP 868/2019   
+[2025] HKCFI 2052
+
+# IN THE HIGH COURT OF THEHONG KONG SPECIAL ADMINISTRATIVE REGIONCOURT OF FIRST INSTANCEMISCELLANEOUS PROCEEDINGS NO 868 OF 2019
+
+# IN THE MATTER OF Sound Global Li...
+
+--- 正在处理: HCMP000868_2019.pdf ---
+✅ 生成 Markdown: downloads\sound global ltd.\markdown_output\HCMP000868_2019.md
+✅ API 响应状态码: 200
+📄 返回内容预览: HCMP 868/2019   
+[2022] HKCFI 3025
+
+# IN THE HIGH COURT OF THEHONG KONG SPECIAL ADMINISTRATIVE REGIONCOURT OF FIRST INSTANCEMISCELLANEOUS PROCEEDINGS NO 868 OF 2019
+
+IN THE MATTER OF Sound Global Limi...
+
+进程已结束，退出代码为 0

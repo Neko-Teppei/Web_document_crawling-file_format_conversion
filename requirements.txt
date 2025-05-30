@@ -1,0 +1,8 @@
+flask
+selenium
+requests
+fitz
+mammoth
+docx2pdf
+werkzeug
+convert
