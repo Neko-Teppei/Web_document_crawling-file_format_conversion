@@ -33,7 +33,7 @@ Web legal document crawling and file format conversion tools
   ---
 
 ## 提示：
-#### tips1.   MinerU本地化部署可以参考：https://zhuanlan.zhihu.com/p/1908942870666282723 、 https://www.bilibili.com/video/BV1zCXhYbE2p/?spm_id_from=333.337.search-card.all.click&、[MinerU教程第二弹丨MinerU 本地部署保姆级“喂饭”教程](https://blog.csdn.net/OpenDataLab/article/details/148146903)vd_source=c414af4780348b902d1d9d8bf1ba7692。
+#### tips1.   MinerU本地化部署可以参考：https://zhuanlan.zhihu.com/p/1908942870666282723 、 https://www.bilibili.com/video/BV1zCXhYbE2p/?spm_id_from=333.337.search-card.all.click&vd_source=c414af4780348b902d1d9d8bf1ba7692、[MinerU教程第二弹丨MinerU 本地部署保姆级“喂饭”教程](https://blog.csdn.net/OpenDataLab/article/details/148146903)
 #### tips2.   本地部署后的API化需要下载MinerU官网包,克隆地址：https://github.com/opendatalab/MinerU.git  ,API化可参考上面的csdn博客（按照视频操作会有问题）。
 #### tips3.   本人只用了一个conda环境（MinerU）,且为了保护我的本地tourch环境，只用了CPU进行训练。本机CPU:笔记本版的i7-12400H+32G运行内存。
 #### tips4.   如果不需要配置本地API环境，只想单个转换文件格式（或者是demo)，可以直接在cmd(管理员模式)下运行conda环境后：
